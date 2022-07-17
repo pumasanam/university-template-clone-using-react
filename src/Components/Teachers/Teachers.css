@@ -1,0 +1,103 @@
+.teachers{
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    padding: 5rem 6rem;
+    text-align: center;
+}
+
+.teachers h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.teachers_data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+}
+
+.teacherlist img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.teacherlist h3,p{
+    text-align: left;
+}
+
+
+
+
+
+
+
+.teacherlist p{
+    line-height: 22px;
+}
+
+.teacherlist{
+    background-color: white;
+    color: black;
+}
+
+.teacher_div{
+    padding: 1rem;
+    text-align: left;
+    transition: width 2s;
+
+}
+
+
+ .teacher_div h3{
+    margin: 10px 0px;
+    font-size: 1.4rem;
+    transition: width 2s;
+    display: inline-block;
+    position: relative;
+}
+
+
+.teacher_div h3{
+    position: relative;
+}
+
+.teacher_div h3:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color:#2c3e50;
+    left: 0;
+    transition: 0.3s ease;
+    bottom: 0;
+}
+
+.teacherlist:hover .teacher_div h3:after{
+    width: 100%;
+}
+
+
+@media screen and (max-width:840px){
+    .teachers_data{
+        grid-template-columns: 1fr;
+    }
+
+    .teacherlist img{
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:640px){
+    .teachers{
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width:430px){
+    .teachers h1{
+        font-size: 2.2rem;
+    }
+}

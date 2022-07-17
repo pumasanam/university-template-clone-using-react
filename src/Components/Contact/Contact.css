@@ -1,0 +1,50 @@
+.contact{
+    background-color: black;
+    color: white;
+    padding: 5rem 6rem;
+}
+
+.contact form{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact form input{
+    width: 100%;
+    margin: 13px 0px;
+    background-color: transparent;
+    color: aqua;
+    padding: 15px 5px;
+    outline: none;
+    font-size: 1rem;
+    border-color: aqua;
+}
+
+.contact form input::placeholder{
+    color: aqua;
+}
+
+
+.contact form button{
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact form button:hover{
+    background-color: aqua;
+    color: #2f3640;
+}
+
+
+@media screen and (max-width:640px){
+    .contact{
+        padding: 3rem 2rem;
+    }
+}

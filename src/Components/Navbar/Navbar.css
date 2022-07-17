@@ -1,0 +1,132 @@
+.navbar{
+    background-color: white;
+    padding: 0px 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav ul li a{
+    color: #2f3640;
+    
+}
+
+.navbar .logo{
+    color: #341f97;
+    font-size: 1.5rem;
+}
+
+/* .icons span{
+   
+    
+} */
+
+.navbar .icons{
+    display: none;
+}
+
+.nav_ul .dropdown_Li{
+    position: relative;
+}
+
+
+.nav_ul .dropdown_Li:hover .innerul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    margin: 0;
+    padding: 0px;
+    width: 150px;
+    grid-gap: 0px;
+}
+
+.nav_ul .dropdown_Li:hover .innerul li{
+    padding: 20px 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.nav_ul .dropdown_Li:hover .innerul li:hover{
+    background-color: black;
+    color: white;
+}
+
+.nav_ul .dropdown_Li:hover .innerul li:hover a{
+    color: white;
+    display: block;
+}
+
+
+.innerul{
+    display: none;
+}
+
+.nav_ul .dropdown_Li:hover .innerul{
+    display: block;
+}
+
+@media screen and (max-width:840px){
+    .navbar .icons{
+        display: block;
+    }
+
+    .nav_ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        height: 100vh;
+        width: 300px;
+        right: -300px;
+        background-color: white;
+        z-index: -3;
+        padding: 2.8rem;
+        transition: 0.3s ease;
+    }
+
+
+    .nav_ul.active{
+        right: 0px;
+    }
+
+
+    .nav_ul .dropdown_Li:hover .innerul {
+       
+        top: 0%;
+        left: 100%;
+      
+    }
+
+    
+
+   
+
+   
+}
+
+
+@media screen and (max-width:430px){
+    .navbar{
+        
+        padding: 0px 1rem;
+        
+    }
+}

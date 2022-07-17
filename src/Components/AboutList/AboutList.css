@@ -1,0 +1,41 @@
+.about{
+    width: 100%;
+    padding: 5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.about .aboutlist{
+    width: 48%;
+}
+
+.about .aboutlist h3{
+    margin-bottom: 5px;
+}
+
+.about .aboutlist p{
+    text-align: justify;
+}
+
+
+@media screen and (max-width:840px){
+    .about{
+        flex-direction: column;
+    }
+
+    .about .aboutlist{
+        width: 100%;
+    }
+
+    .sdAboutlist{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .about{
+        padding: 3rem 2rem;
+    }
+}
